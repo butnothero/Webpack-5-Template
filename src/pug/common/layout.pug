@@ -1,0 +1,42 @@
+// Path
+- assetsPath = './'
+
+// Head data
+- siteLang = 'ru'
+- siteName = 'siteName'
+
+// Page classes
+- pageHtmlClass = 'page-html'
+- pageBodyClass = 'page-body'
+- pageHeaderClass = 'page-header'
+- pageMainClass = 'page-main'
+- pageFooterClass = 'page-footer'
+
+block variables
+
+include ../blocks/global
+
+doctype html
+html(lang=siteLang, class=pageHtmlClass)
+    head
+        meta(charset='utf-8')
+
+        title #{pageTitle} - #{siteName}
+
+        meta(name='description', content=pageDescription)
+        meta(name='keywords', content=pageKeywords)
+
+        meta(http-equiv='X-UA-Compatible', content='IE=edge')
+        meta(name='viewport', content='width=device-width, initial-scale=1, maximum-scale=1')
+
+        // Favicon
+        link(rel='icon', type='image/png', href=assetsPath + 'static/favicon.ico')
+
+    body(class=pageBodyClass)
+        include include/header
+
+        block content
+
+        include include/footer
+
+    include include/scripts

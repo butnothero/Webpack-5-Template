@@ -1,0 +1,13 @@
+extends ../common/layout
+
+block variables
+    - pageTitle = 'pageTitle'
+    - pageDescription = 'descText'
+    - pageKeywords = 'keyText'
+
+block content
+    +section-title({
+        text: 'About',
+        class: 'section-title'
+    })
+    a(href='index.html') Index link

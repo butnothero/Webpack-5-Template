@@ -1,0 +1,7 @@
+mixin section-title(object)
+
+    - object = object || {}
+    - object.text = object.text || ''
+    - object.class = object.class || ''
+
+    h1(class=object.class) #{object.text}
