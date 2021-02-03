@@ -13,7 +13,7 @@ module.exports = merge(baseFile, {
         // historyApiFallback: true,
         contentBase: paths.build,
         open: true,
-        // compress: true,
+        compress: true,
         // hot: true,
         port: 8080,
         overlay: {

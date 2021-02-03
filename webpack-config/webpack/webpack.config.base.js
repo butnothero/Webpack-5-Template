@@ -10,12 +10,12 @@ const CopyWebpackPlugin = require('copy-webpack-plugin');
 const HtmlWebpackPlugin = require('html-webpack-plugin');
 
 module.exports = {
-    entry: [paths.src + '/index.js'],
+    entry: [paths.src + '/index.ts'],
 
     output: {
         path: paths.build,
         publicPath: '',
-        filename: `[name].bundle.js`
+        filename: `[name].[contenthash].bundle.js`
     },
 
     module: {
@@ -26,9 +26,8 @@ module.exports = {
             },
 
             {
-                test: /\.js$/,
-                exclude: /node_modules/,
-                use: ['babel-loader']
+              test: /\.tsx?$/,
+                use: ['ts-loader']
             },
 
             {
