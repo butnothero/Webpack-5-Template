@@ -42,6 +42,15 @@ module.exports = merge(baseFile, {
                     'sass-loader',
                 ],
             },
+
+            {
+                test: /\.ts$/,
+                enforce: 'pre',
+                loader: 'ts-loader',
+                options: {
+                    configFile: 'tsconfig.prod.json',
+                },
+            },
         ],
     },
 
