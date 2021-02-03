@@ -1,6 +1,6 @@
 {
   "name": "webpack_5_boilerplate",
-  "version": "1.0.0",
+  "version": "1.0.9",
   "description": "This template is designed to quickly create websites (including multi-page ones). The template structure is prepared to use the BEM methodology. My email butnothero@gmail.com.",
   "main": "index.js",
   "author": "Danil Kondrachuk",
