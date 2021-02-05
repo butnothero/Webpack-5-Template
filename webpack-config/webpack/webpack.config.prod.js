@@ -38,7 +38,14 @@ module.exports = merge(baseFile, {
                             sourceMap: false,
                         },
                     },
-                    'postcss-loader',
+                    {
+                        loader: 'postcss-loader',
+                        options: {
+                            postcssOptions: {
+                                config: paths.postcssConfig,
+                            }
+                        }
+                    },
                     'sass-loader',
                 ],
             },
