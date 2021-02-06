@@ -1,3 +1,5 @@
+import { styleLintPlugin } from '../plugins/'
+
 const paths = require('../utils/paths');
 
 const fs = require('fs');
@@ -74,6 +76,8 @@ module.exports = {
     },
 
     plugins: [
+        styleLintPlugin,
+
         new CleanWebpackPlugin(),
 
         new CopyWebpackPlugin({
