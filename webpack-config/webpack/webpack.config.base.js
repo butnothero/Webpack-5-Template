@@ -1,4 +1,4 @@
-import { styleLintPlugin } from '../plugins/'
+const styleLintPlugin =  require('../plugins/styleLintPlugin');
 
 const paths = require('../utils/paths');
 

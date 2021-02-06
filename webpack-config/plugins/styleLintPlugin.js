@@ -1,6 +1,6 @@
-import path from 'path';
+const path = require('path');
 
-import StyleLintPlugin from 'stylelint-webpack-plugin';
+const StyleLintPlugin = require('stylelint-webpack-plugin');
 
 // Import Configuration.
 const paths = require('../utils/paths');
@@ -9,11 +9,11 @@ const paths = require('../utils/paths');
  * StyleLintPlugin()
  * A webpack plugin to lint your CSS/Sass code using stylelint.
  */
-export const styleLintPlugin = new StyleLintPlugin({
+module.exports = styleLintPlugin = new StyleLintPlugin({
     emitErrors: true,
     emitWarning: true,
     context: paths.src,
-    extensions: ['.css'],
+    extensions: ['.scss', '.sass', '.css'],
     failOnError: !process.env.NODE_ENV === 'development',
     failOnWarning: !process.env.NODE_ENV === 'development',
     lintDirtyModulesOnly: process.env.NODE_ENV === 'development',
