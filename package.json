@@ -1,6 +1,6 @@
 {
   "name": "webpack_5_boilerplate",
-  "version": "1.0.9",
+  "version": "0.9.1",
   "description": "This template is designed to quickly create websites (including multi-page ones). The template structure is prepared to use the BEM methodology. My email butnothero@gmail.com.",
   "main": "index.js",
   "author": "Danil Kondrachuk",
@@ -9,9 +9,9 @@
     "dev": "cross-env NODE_ENV=development webpack serve --config webpack-config/webpack/webpack.config.dev.js",
     "build": "cross-env NODE_ENV=production webpack --config webpack-config/webpack/webpack.config.prod.js",
     "clean":"rmdir dist /S /Q",
-    "eslint": "eslint --cache --ext .js,.jsx,.ts,.tsx src",
-    "eslint:fix": "eslint --fix --cache --ext .js,.jsx,.ts,.tsx src",
-    "eslint:dump": "eslint --print-config ./.eslintrc.json"
+    "lint:js": "eslint --cache --ext .js,.jsx,.ts,.tsx src",
+    "lint:js-fix": "eslint --fix --cache --ext .js,.jsx,.ts,.tsx src",
+    "lint:js-dump": "eslint --print-config ./.eslintrc.json"
   },
   "keywords": [
     "webpack",
@@ -61,6 +61,6 @@
   },
   "repository": {
     "type": "git",
-    "url": ""
+    "url": "https://github.com/ButNotHero/Webpack-5-Template"
   }
 }
