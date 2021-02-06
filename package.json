@@ -8,6 +8,7 @@
   "scripts": {
     "dev": "cross-env NODE_ENV=development webpack serve --config webpack-config/webpack/webpack.config.dev.js",
     "build": "cross-env NODE_ENV=production webpack --config webpack-config/webpack/webpack.config.prod.js",
+    "clean":"rmdir dist /S /Q",
     "eslint": "eslint --cache --ext .js,.jsx,.ts,.tsx src",
     "eslint:fix": "eslint --fix --cache --ext .js,.jsx,.ts,.tsx src",
     "eslint:dump": "eslint --print-config ./.eslintrc.json"
