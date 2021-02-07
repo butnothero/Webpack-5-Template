@@ -1,7 +1,7 @@
-const paths = require('../utils/paths');
+const paths = require('./utils/paths');
 const baseFile = require('./webpack.config.base');
 
-const {merge} = require('webpack-merge');
+const { merge } = require('webpack-merge');
 
 const MiniCssExtractPlugin = require('mini-css-extract-plugin');
 const OptimizeCssAssetsPlugin = require('optimize-css-assets-webpack-plugin')
@@ -43,8 +43,8 @@ module.exports = merge(baseFile, {
                         options: {
                             postcssOptions: {
                                 config: paths.postcssConfig,
-                            }
-                        }
+                            },
+                        },
                     },
                     'sass-loader',
                 ],

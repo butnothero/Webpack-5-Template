@@ -6,8 +6,8 @@
   "author": "Danil Kondrachuk",
   "license": "MIT",
   "scripts": {
-    "dev": "cross-env NODE_ENV=development webpack serve --config webpack-config/webpack/webpack.config.dev.js",
-    "build": "cross-env NODE_ENV=production webpack --config webpack-config/webpack/webpack.config.prod.js",
+    "dev": "cross-env NODE_ENV=development webpack serve --config webpack/webpack.config.dev.js",
+    "build": "cross-env NODE_ENV=production webpack --config webpack/webpack.config.prod.js",
     "clean": "rmdir dist /S /Q",
     "lint:script": "eslint --cache --ext .js,.jsx,.ts,.tsx src",
     "lint:script:fix": "eslint --fix --cache --ext .js,.jsx,.ts,.tsx src",

@@ -1,8 +1,8 @@
-const paths = require('../utils/paths');
+const paths = require('./utils/paths');
 const baseFile = require('./webpack.config.base');
 
 const webpack = require('webpack');
-const {merge} = require('webpack-merge');
+const { merge } = require('webpack-merge');
 
 module.exports = merge(baseFile, {
     mode: 'development',
@@ -18,14 +18,14 @@ module.exports = merge(baseFile, {
         port: 8080,
         overlay: {
             warnings: true,
-            errors: true
-        }
+            errors: true,
+        },
     },
 
     plugins: [
         // new webpack.HotModuleReplacementPlugin(),
         new webpack.SourceMapDevToolPlugin({
-            filename: '[file].map'
-        })
-    ]
+            filename: '[file].map',
+        }),
+    ],
 });
