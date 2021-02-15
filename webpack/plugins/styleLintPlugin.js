@@ -12,7 +12,7 @@ const paths = require('../utils/paths');
 module.exports = styleLintPlugin = new StyleLintPlugin({
     emitErrors: true,
     emitWarning: true,
-    context: paths.src,
+    context: paths.src + '/scss/**/*',
     extensions: ['.scss', '.sass', '.css'],
     failOnError: !process.env.NODE_ENV === 'development',
     failOnWarning: !process.env.NODE_ENV === 'development',
