@@ -15,6 +15,10 @@ module.exports = {
         filename: `[name].[contenthash].bundle.js`,
     },
 
+    resolve: {
+        extensions: ['.js', '.jsx', '.ts', '.tsx'],
+    },
+
     module: {
         rules: [
             {
@@ -74,6 +78,6 @@ module.exports = {
         cleanWebpackPlugin,
         copyWebpackPlugin,
         styleLintPlugin,
-        ...htmlPages
+        ...htmlPages,
     ],
 }
