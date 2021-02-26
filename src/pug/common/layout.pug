@@ -14,7 +14,7 @@
 
 block variables
 
-include ../blocks/global
+include ../blocks/index
 
 doctype html
 html(lang=siteLang, class=pageHtmlClass)
@@ -33,10 +33,10 @@ html(lang=siteLang, class=pageHtmlClass)
         link(rel='icon', type='image/png', href=assetsPath + 'static/favicon.ico')
 
     body(class=pageBodyClass)
-        include include/header
+        include include/page-header
 
         block content
 
-        include include/footer
+        include include/page-footer
 
-    include include/scripts
+    include include/page-script
