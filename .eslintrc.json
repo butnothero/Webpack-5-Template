@@ -42,7 +42,7 @@
     "no-unused-expressions": "error", // disallow unused expressions
     "no-useless-call": "error", // disallow unnecessary calls to .call() and .apply()
     "no-useless-concat": "error", // disallow unnecessary concatenation of literals or template literals
-    "no-useless-return": "error", // disallow redundant return statements
+    "no-useless-return": "warn", // disallow redundant return statements
     "prefer-promise-reject-errors": "error", // require using Error objects as Promise rejection reasons
     "radix": "error", // enforce the consistent use of the radix argument when using parseInt()
     "no-undefined": "error", // disallow the use of undefined as an identifier
@@ -90,7 +90,7 @@
     "prefer-arrow-callback": "warn", // require using arrow functions for callbacks
     "prefer-destructuring": "error", // require destructuring from arrays and/or objects
     "rest-spread-spacing": ["error", "never"], // enforce spacing between rest and spread operators and their expressions
-    "sort-imports": "error", // enforce sorted import declarations within modules
+//    "sort-imports": "error", // enforce sorted import declarations within modules
     "template-curly-spacing": "error", // require or disallow spacing around embedded expressions of template strings
 
     "promise/prefer-await-to-then": "error", // refer await to then() for reading Promise values,
@@ -125,8 +125,8 @@
     "@typescript-eslint/prefer-readonly": "warn", // Requires that private members are marked as readonly if they're never modified outside of the constructor
     "@typescript-eslint/no-explicit-any": "off",
 //    "@typescript-eslint/camelcase": ["error", { "properties": "never" }],
-    "@typescript-eslint/explicit-function-return-type": ["error", { "allowExpressions": true }],
+    "@typescript-eslint/explicit-function-return-type": ["warn", { "allowExpressions": true }],
     "@typescript-eslint/interface-name-prefix": "off",
-    "@typescript-eslint/no-unused-vars": ["error", { "argsIgnorePattern": "^_", "varsIgnorePattern": "^_$" }]
+    "@typescript-eslint/no-unused-vars": ["warn", { "argsIgnorePattern": "^_", "varsIgnorePattern": "^_$" }]
   }
 }
