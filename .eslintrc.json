@@ -17,6 +17,7 @@
     "tsconfigRootDir": "."
   },
   "plugins": ["promise", "optimize-regex", "sonarjs", "@typescript-eslint"],
+  "ignorePatterns": ["webpack", "**/*.js"],
   "rules": {
     "no-shadow": ["error", { "builtinGlobals": true }], // disallow variable declarations from shadowing variables declared in the outer scope
     "no-duplicate-imports": ["error", { "includeExports": true }], // disallow duplicate module imports

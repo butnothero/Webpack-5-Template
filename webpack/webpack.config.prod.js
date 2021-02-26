@@ -4,8 +4,8 @@ const baseFile = require('./webpack.config.base');
 const { merge } = require('webpack-merge');
 
 const MiniCssExtractPlugin = require('mini-css-extract-plugin');
-const OptimizeCssAssetsPlugin = require('optimize-css-assets-webpack-plugin')
-const TerserPlugin = require('terser-webpack-plugin')
+const OptimizeCssAssetsPlugin = require('optimize-css-assets-webpack-plugin');
+const TerserPlugin = require('terser-webpack-plugin');
 
 module.exports = merge(baseFile, {
     mode: 'production',
@@ -28,7 +28,7 @@ module.exports = merge(baseFile, {
     module: {
         rules: [
             {
-                test: /\.(scss|css)$/,
+                test: /\.(sa|sc|c)ss$/,
                 use: [
                     MiniCssExtractPlugin.loader,
                     {
