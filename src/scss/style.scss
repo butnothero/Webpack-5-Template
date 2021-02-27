@@ -2,8 +2,8 @@
 @import "vendor/normalize";
 
 // Common
-@import "common/header";
-@import "common/footer";
+@import "../blocks/page-header/page-header";
+@import "../blocks/page-footer/page-footer";
 
 // Blocks
-@import "blocks/section-title/section-title";
+@import "../blocks/section-title/section-title";

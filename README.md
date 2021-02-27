@@ -1,5 +1,5 @@
-# Webpack 5 template
-The template is prepared for fast and high-quality website creation. My Email: butnothero@gmail.com.
+# Webpack 5 Boilerplate
+The webpack 5 boilerplate is prepared for fast and high-quality website creation. My Email: butnothero@gmail.com.
 
 ## Features
 1. Pug (multipage)

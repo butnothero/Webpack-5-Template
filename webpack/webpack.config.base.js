@@ -77,7 +77,7 @@ module.exports = {
     plugins: [
         cleanWebpackPlugin,
         copyWebpackPlugin,
-        styleLintPlugin,
+		styleLintPlugin,
         ...htmlPages,
     ],
 }

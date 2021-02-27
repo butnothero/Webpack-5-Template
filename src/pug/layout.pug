@@ -1,4 +1,6 @@
-// Path
+include ../blocks/index
+
+// Assets path
 - assetsPath = './'
 
 // Head data
@@ -14,29 +16,27 @@
 
 block variables
 
-include ../blocks/index
-
 doctype html
 html(lang=siteLang, class=pageHtmlClass)
     head
         meta(charset='utf-8')
-
-        title #{pageTitle} - #{siteName}
-
-        meta(name='description', content=pageDescription)
-        meta(name='keywords', content=pageKeywords)
-
         meta(http-equiv='X-UA-Compatible', content='IE=edge')
         meta(name='viewport', content='width=device-width, initial-scale=1, maximum-scale=1')
 
-        // Favicon
         link(rel='icon', type='image/png', href=assetsPath + 'static/favicon.ico')
 
+        title #{pageTitle} - #{siteName}
+        meta(name='description', content=pageDescription)
+        meta(name='keywords', content=pageKeywords)
+
+
     body(class=pageBodyClass)
-        include include/page-header
+        block page-header
+            +page-header()
 
         block content
 
-        include include/page-footer
+        block page-footer
+            +page-footer()
 
-    include include/page-script
+    block scripts
