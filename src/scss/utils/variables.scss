@@ -1,3 +1,56 @@
 // Colors
-$red: red;
-$green: green;
+$white: #fff;
+$black: #000;
+
+$gray-1: #f5f5f5;
+$gray-2: #959595;
+$gray-3: #4b4b4b;
+
+$main-red: #be1209;
+$main-red-hv: #9f0f08;
+
+$main-blue: #2b71b9;
+$main-blue-hv: #1f568c;
+
+// Fonts
+$roboto: 'Roboto', sans-serif;
+$open-sans: 'Open Sans', sans-serif;
+$montserrat: 'Montserrat', sans-serif;
+
+// Font size (paragraph)
+$fz-sm: 14px;
+$fz-md: 18px;
+$fz-lg: 22px;
+$fz-xl: 26px;
+$fz-xxl: 30px;
+
+// Font size (h1-h6)
+$fz-h1: 40px;
+$fz-h2: 32px;
+$fz-h3: 24px;
+$fz-h4: 18px;
+$fz-h5: 16px;
+$fz-h6: 16px;
+
+// Breakpoints (width)
+$bp-w-sm: 480px;
+$bp-w-md: 768px;
+$bp-w-lg: 1024px;
+$bp-w-xl: 1200px;
+$bp-w-xxl: 1800px;
+
+// Container max width
+$cont-mw-dft: 1200px;
+
+// Container padding
+$cont-pad-dft: 40px;
+
+// Transition
+$trans-dft: 0.2s;
+
+// Border radius
+$border-r-sm: 2px;
+$border-r-md: 4px;
+$border-r-lg: 8px;
+$border-r-xl: 16px;
+$border-r-xxl: 32px;

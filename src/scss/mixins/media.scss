@@ -1,1 +1,31 @@
 @import "../utils/variables";
+
+@mixin media-sm {
+  @media screen and (max-width: $bp-w-sm) {
+    @content;
+  }
+}
+
+@mixin media-md {
+  @media screen and (max-width: $bp-w-md) {
+    @content;
+  }
+}
+
+@mixin media-lg {
+  @media screen and (max-width: $bp-w-lg) {
+    @content;
+  }
+}
+
+@mixin media-xl {
+  @media screen and (max-width: $bp-w-xl) {
+    @content;
+  }
+}
+
+@mixin media-xxl {
+  @media screen and (max-width: $bp-w-xxl) {
+    @content;
+  }
+}
