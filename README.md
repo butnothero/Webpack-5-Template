@@ -1,3 +1,5 @@
+![alt text](boilerplate-logo.png "Boilerplate logo")
+
 # Webpack 5 Boilerplate
 The webpack 5 boilerplate is prepared for fast and high-quality website creation. My Email: butnothero@gmail.com.
 
